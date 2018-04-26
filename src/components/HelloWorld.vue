@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+  <Logo />
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
@@ -84,8 +85,13 @@
 </template>
 
 <script>
+import Logo from './Logo';
+
 export default {
   name: 'HelloWorld',
+  components: {
+    Logo,
+  },
   data() {
     return {
       msg: 'Welcome to Your Vue.js App',
