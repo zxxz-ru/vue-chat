@@ -1,7 +1,11 @@
 <template>
   <div class="chat-form">
-  <div><textarea rows="5" /></div>
-  <div><button> Submit </button></div>
+  <div>
+  <textarea rows="5"  v-model="msg"
+  placeholder="Enter You Message here." >
+  </textarea>
+  </div>
+  <div><button  v-on:click="sendMessage">Submit</button></div>
   </div>
 </template>
 
@@ -9,13 +13,18 @@
 
 export default {
   name: 'ChatForm',
-  components: {
-  },
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: '',
     };
   },
+  methods: {
+      /* eslint-disable-next-line */
+      sendMessage: function () {
+          this.$parent.submitPost(this.msg);
+          this.msg = '';
+          },
+      },
 };
 </script>
 
@@ -27,6 +36,7 @@ export default {
     }
 textarea {
     width: 100%;
+    white-space: pre-line;
     }
     button {
         padding: .5em 1em;
