@@ -23,7 +23,7 @@ export default {
       posts: [],
   current_user: 'You',
     };
-  },
+},
   methods: {
       /* eslint-disable-next-line */
       submitPost: function (msg) {
@@ -34,14 +34,14 @@ export default {
           },
       },
       /* eslint-disable-next-line */
-mounted: function () {
-window.addEventListener('load', this.init, false);
-},
+      mounted: function () {
+        window.addEventListener('load', this.init, false);
+      },
       /* eslint-disable-next-line */
-beforeDestroy: function () {
-    this.websocket.close();
-    },
-};
+      beforeDestroy: function () {
+        this.websocket.close();
+          },
+  };
 </script>
 
 <style scoped>

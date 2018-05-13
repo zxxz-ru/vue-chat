@@ -14,6 +14,7 @@ module.exports = {
   // required to lint *.vue files
   plugins: [
     'vue'
+    'import'
   ],
   // check if imports actually resolve
   settings: {
@@ -29,6 +30,10 @@ module.exports = {
     'import/extensions': ['error', 'always', {
       js: 'never',
       vue: 'never'
+    }],
+    // add vue validate
+    'eslint.validate': ['javascript', 'javascriptreact', {
+    'language': 'vue', 'autoFix': true
     }],
     // disallow reassignment of function parameters
     // disallow parameter object manipulation except for specific exclusions
@@ -47,6 +52,8 @@ module.exports = {
       'indent': 0,
       'func-names':0,
       'object-shorthand':['error','always', {'ignoreConstructors':true}],
+    // set space after comment and exceptions for jscs disable comments
+    'spaced-comment': ['error', 'always', {'exceptions': ['-']}],
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }

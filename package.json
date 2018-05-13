@@ -33,6 +33,7 @@
     "chalk": "^2.0.1",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
+    "csslint": "^1.0.5",
     "eslint": "^4.15.0",
     "eslint-config-airbnb-base": "^11.3.0",
     "eslint-friendly-formatter": "^3.0.0",
@@ -46,6 +47,7 @@
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.0.4",
     "jest-serializer-vue": "^0.3.0",
+    "jscs": "^3.0.7",
     "node-notifier": "^5.1.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
@@ -70,6 +72,9 @@
   "engines": {
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
+  },
+  "jshintConfig": {
+    "esversion": 6
   },
   "browserslist": [
     "> 1%",
