@@ -13,8 +13,7 @@ module.exports = {
   extends: ['plugin:vue/essential', 'airbnb-base'],
   // required to lint *.vue files
   plugins: [
-    'vue'
-    'import'
+    'vue',
   ],
   // check if imports actually resolve
   settings: {
@@ -30,10 +29,6 @@ module.exports = {
     'import/extensions': ['error', 'always', {
       js: 'never',
       vue: 'never'
-    }],
-    // add vue validate
-    'eslint.validate': ['javascript', 'javascriptreact', {
-    'language': 'vue', 'autoFix': true
     }],
     // disallow reassignment of function parameters
     // disallow parameter object manipulation except for specific exclusions

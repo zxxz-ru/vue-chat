@@ -6,6 +6,7 @@
 </template>
 
 <script>
+          /* eslint-disable-next-line */
 import PostTitle from './PostTitle';
 
 export default {
@@ -20,9 +21,9 @@ export default {
 
 <style scoped>
 .chat-post{
-border: 1px solid black;
-width : 98%;
-margin: 0 0 .5em 0;
+border: .1em solid black;
+width: 19.2em;
+margin: 0 .2em .5em .2em;
 padding:0;
 }
 #msg {

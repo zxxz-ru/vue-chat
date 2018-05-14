@@ -1,7 +1,7 @@
 <template>
   <div class="chat-form">
   <div>
-  <textarea rows="5"  v-model="msg"
+  <textarea rows="3" v-model="msg"
   placeholder="Enter You Message here." >
   </textarea>
   </div>
@@ -30,15 +30,27 @@ export default {
 
 <style scoped>
 .chat-form {
-    margin:0 0 3px;
+    margin:0 0 .25em;
     padding:0;
-    width: 98%;
+    width: 19.6em;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
     }
 textarea {
-    width: 100%;
+    font-size: 1rem;
     white-space: pre-line;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    min-width: 98%;
+    width: 98%;
+    margin: .25rem 1% .25rem 1%;
+    border: .0625rem solid lightgrey;
     }
     button {
-        padding: .5em 1em;
+        font-size: .8125em;
+        padding: .5rem 1.875rem;
+        margin: 0 auto .25rem;
         }
 </style>

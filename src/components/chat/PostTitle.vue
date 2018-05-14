@@ -29,7 +29,7 @@ export default {
     margin:0;
     display: inline;
     color: grey;
-    font-size: .6em;
+    font-size: 1em;
     }
 #p-name {
     margin: 0;

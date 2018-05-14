@@ -7,7 +7,9 @@
 
 <script>
 import Vue from 'vue';
+// eslint-disable-next-line
 import ChatList from './ChatList';
+// eslint-disable-next-line
 import ChatForm from './ChatForm';
 import ws from './ws';
 
@@ -25,20 +27,17 @@ export default {
     };
 },
   methods: {
-      /* eslint-disable-next-line */
-      submitPost: function (msg) {
+      submitPost(msg) {
           if (msg.length === 0) {
               return;
               }
               this.doSend(msg);
           },
       },
-      /* eslint-disable-next-line */
-      mounted: function () {
+      mounted() {
         window.addEventListener('load', this.init, false);
       },
-      /* eslint-disable-next-line */
-      beforeDestroy: function () {
+      beforeDestroy() {
         this.websocket.close();
           },
   };
@@ -46,11 +45,14 @@ export default {
 
 <style scoped>
 .chat {
-border: 1px solid black;
-border-radius: 10px;
-width: 300px;
-height: 350px;
-padding: 1%;
-margin: 2em auto;
+font-size: 100%;
+border-radius: .625em;
+width: 20em;
+height: 22em;
+margin: 0 auto .3em;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+border: .0625em solid black;
 }
 </style>
