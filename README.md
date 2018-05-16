@@ -1,7 +1,7 @@
 # y
 
 > y
-
+Menu: [Esternal Links](#external-links)
 ## Build Setup
 
 ``` bash
@@ -23,5 +23,5 @@ npm run unit
 # run all tests
 npm test
 ```
-
+(#external-links)
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
