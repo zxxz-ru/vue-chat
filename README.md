@@ -3,14 +3,14 @@
 Vue Component to mimic Chat Room. As Chat Partner used
 [websocket.org](#http://websocket.org/) service. As data carrier used
 WebSocket.
-Techical Assignmet:
+Techical Assignment:
 > Make simple chat with Vue 2, that You be proud of. In order to see how
 > quick You be able to get on with new Technology.
 
 ### Table of Contents: 
-[External Links](#external-links)
-[Build Setup](#build-setup)
-[Description](#description)
+[External Links](#external-links)  
+[Build Setup](#build-setup)  
+[Description](#description)  
 
 ## Description
 
